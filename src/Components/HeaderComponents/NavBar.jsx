@@ -22,7 +22,7 @@ export default function Navbar({ navlinks, handleDrawerToogler }) {
         className={classes.ToolBar}
         style={{ backgroundColor: Theme.colors.base1 }}>
         <Typography variant='h5' component='h6'>
-          {"< GreatCoders />"}
+          {"Code By Amna"}
         </Typography>
 
         {/* navlinks  */}

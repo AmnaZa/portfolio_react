@@ -1,8 +1,8 @@
 export const Theme = {
     colors: {
-      base1: "#1e464a", // deep green background [navbar, about , contact]
+      base1: "#DDA0DD", 
       base2: "#fff", //white
-      primary: "#0097a7", //lighter green
-      primary1: "#143438", // deepest green [portfolio, footer]
+      primary: "#D8BFD8", 
+      primary1: "#DA70D6", 
     },
   };
