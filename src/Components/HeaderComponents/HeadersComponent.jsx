@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Box, Typography } from "@material-ui/core";
 import { useStyles } from "./HeaderStyles";
-import Navbar from './NavBar'
-/* import { Decorator } from "../common/commonComponent";*/
+import Navbar from "./NavBar";
+import { Decorator } from "../Common/commonComponent";
 import ArrowDownwardRoundedIcon from "@material-ui/icons/ArrowDownwardRounded";
 import DrawerComponent from "./DrawerComponent";
 import Typed from "react-typed";
@@ -46,11 +46,11 @@ export default function HeadersComponent() {
           Based On Your Needs...
         </Typography>
 
-       {/*  {Decorator({
+        {Decorator({
           label: "About Us",
           withIcon: true,
           Icon: <ArrowDownwardRoundedIcon />,
-        })} */}
+        })}
       </Box>
     </Box>
   );
