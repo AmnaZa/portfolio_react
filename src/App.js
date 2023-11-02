@@ -1,19 +1,19 @@
 import "./App.css";
-import HeadersComponent from "./Components/HeaderComponent/HeadersComponent";
-/* import AboutUs from "./Components/BodyComponents/AboutUs";
+import HeadersComponent from "./Components/HeaderComponents/HeadersComponent";
+import AboutUs from "./Components/BodyComponents/AboutUs";
 import Portfolio from "./Components/BodyComponents/Portfolio";
 import Contact from "./Components/BodyComponents/Contact";
 import Footer from "./Components/BodyComponents/Footer";
- */
+
 function App() {
   return (
     <div>
-  
+      {/* // <h1>App works well</h1> */}
       <HeadersComponent />
-    {/*   <AboutUs />
+      <AboutUs />
       <Portfolio />
       <Contact />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
