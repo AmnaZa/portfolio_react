@@ -59,7 +59,7 @@ export const RenderSectionHeading = ({
 // () => () /// retun directly
 // () => { return}
 
-export const CardMedia = ({ label, Desc, Icon, key }) => {
+export const CardMedia = ({ label, Desc, Icon, key, titleColor, descriptionColor }) => {
   const classes = BodyStyles();
   return (
     <Grid container style={{ marginTop: "16px" }}>
@@ -67,10 +67,12 @@ export const CardMedia = ({ label, Desc, Icon, key }) => {
         <Avatar className={classes.avatar}>{Icon}</Avatar>
       </Grid>
       <Grid item xs={9} className={classes.MediaText}>
-        <Typography variant='body1' componen='h6'>
+        <Typography variant='body1' componen='h6' style={{ color: titleColor }}>
           {label}
         </Typography>
-        <Typography variant='caption'>{Desc}</Typography>
+        <Typography variant='caption' style={{ color: descriptionColor }}>
+          {Desc}
+        </Typography>
       </Grid>
     </Grid>
   );

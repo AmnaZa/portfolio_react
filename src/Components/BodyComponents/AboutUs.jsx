@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Hidden } from "@material-ui/core";
+import { Box, Container, Grid, Hidden, colors } from "@material-ui/core";
 import React from "react";
 import { useStyles } from "./BodyStyles";
 import image from "../../images/About.jpeg";
@@ -14,26 +14,36 @@ export default function AboutUs() {
 
   const cardMediaData = [
     {
-      title: " Web Development",
-      description: "Lorem ipsum dolor sit amet Consectetur adipisicing elit.",
+      title: "Full Stack Developer",
+      description: "MongoDB (M), Express.js (E), React (R), Node.js (N).",
       icon: <DashboardIcon />,
+      titleColor: "black", // Set title color to black
+      descriptionColor: "#1769aa", // Set description color to #1769aa
     },
     {
-      title: "Graphic Design",
-      description: "Lorem ipsum dolor sit amet Consectetur adipisicing elit.",
+      title: "Frontend Development",
+      description: "HTML/CSS, Responsive Design, State Management, Component Libraries.",
       icon: <ToysIcon />,
+      titleColor: "black", // Set title color to black
+      descriptionColor: "#1769aa", // Set description color to #1769aa
     },
     {
-      title: "Mobile Apps",
-      description: "Lorem ipsum dolor sit amet Consectetur adipisicing elit.",
+      title: "Certification",
+      description: "Introduction to Front-End Development(Meta), Crash Course on Python.(Google), Google IT Automation with Python Professional Certificate.(Google).",
       icon: <PermDeviceInformationIcon />,
+      titleColor: "black", // Set title color to black
+      descriptionColor: "#1769aa", // Set description color to #1769aa
     },
     {
-      title: "Marketing",
-      description: "Lorem ipsum dolor sit amet Consectetur adipisicing elit.",
+      title: "Security",
+      description: "User Authentication, Access Control. Agile Methodology: Agile Development.",
       icon: <AcUnitIcon />,
+      titleColor: "black", // Set title color to black
+      descriptionColor: "#1769aa", // Set description color to #1769aa
     },
   ];
+  
+  
   return (
     <Box className={classes.section} id='About'>
       <ScrollAnimation animateIn='fadeIn'>
@@ -43,7 +53,7 @@ export default function AboutUs() {
               <Box component={Hidden} xsDown>
                 <img
                   src={image}
-                  alt=' about us'
+                  alt='about us'
                   className={classes.responsiveImg}
                 />
               </Box>
@@ -52,15 +62,9 @@ export default function AboutUs() {
               {RenderSectionHeading({
                 smallText: "ABOUT ME",
                 heading: "Hello I'm Amna Zahid",
-                description:
-                  "A self taught developer who loves to code !",
+                description: "A self-taught developer who loves to code !",
               })}
               <br />
-              {/* {CardMedia({
-              label: "labae1",
-              Desc: "Desc1",
-              Icon: <AcUnitIcon />,
-            })} */}
               <Grid container>
                 {cardMediaData.map((item, i) => (
                   <Grid item xs={12} sm={6} key={i}>
@@ -68,6 +72,8 @@ export default function AboutUs() {
                       label: item.title,
                       Desc: item.description,
                       Icon: item.icon,
+                      titleColor: item.titleColor,
+                      descriptionColor: item.descriptionColor,
                     })}
                   </Grid>
                 ))}

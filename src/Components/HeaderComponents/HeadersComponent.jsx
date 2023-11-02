@@ -34,7 +34,7 @@ export default function HeadersComponent() {
         <Typography varinat='h3' component='h4' className={classes.headerTitle}>
           I'm a <span style={{ paddingRight: "5px" }}></span>
           <Typed
-            strings={[" Webdeveloper,", " UI/UX Designer,", " Digital Expert,"]}
+            strings={[" FullStack Developer.", " UI/UX Designer,", " Digital Expert,"]}
             typeSpeed={30}
             backSpeed={50}
             loop
