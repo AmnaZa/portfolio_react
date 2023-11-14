@@ -47,7 +47,7 @@ export default function HeadersComponent() {
         </Typography>
 
         {Decorator({
-          label: "About Us",
+          label: "About Me",
           withIcon: true,
           Icon: <ArrowDownwardRoundedIcon />,
         })}
